@@ -30,8 +30,6 @@ import static com.samkumo.etp4700_projekti.Constants.TASK_LOCATION_REQUEST;
 /**
  * Created by Samuli on 31.3.2017.
  *
- * TODO: Find a way to color or otherwise indicate task status
- *
  */
 
 public class Tasks extends Fragment{
