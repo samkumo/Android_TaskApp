@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <EditText
+        android:id="@+id/et_createtask_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"/>
+
+    <EditText
+        android:id="@+id/et_createtask_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/place" />
+
+    <TextView
+        android:id="@+id/tv_coordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:text="@string/chooselocation"
+        android:textAlignment="viewStart" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_setlocation_current"
+            android:layout_width="128dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:text="Current"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:onClick="setCurrentLocation"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/btn_setlocation_map"
+            android:layout_width="128dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="From map"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btn_setlocation_current"
+            android:onClick="setMapLocation"
+            android:layout_marginStart="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tv_coordinatesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/coordinates" />
+
+    <TextView
+        android:id="@+id/tv_createtask_lon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/longitude"
+        android:paddingStart="4dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+    <TextView
+        android:id="@+id/tv_createtask_lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude"
+        android:paddingStart="4dp"
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="24dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:text="@string/requestadminlogin" />
+
+    <EditText
+        android:id="@+id/et_createtask_adminname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"/>
+
+    <EditText
+        android:id="@+id/et_createtask_adminpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="?android:windowBackground">
+
+    <TextView
+        android:id="@+id/overview_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/userdetails"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:id="@+id/tv_userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/userid"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"/>
+
+    <TextView
+        android:id="@+id/tv_userpasswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/passwordLong"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <TextView
+        android:id="@+id/tv_userdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descriptionmissing"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <Button
+        android:id="@+id/btn_changedesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/changedescription" />
+
+    <Button
+        android:id="@+id/btn_changepwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/changepwd" />
+
+
+</LinearLayout>
