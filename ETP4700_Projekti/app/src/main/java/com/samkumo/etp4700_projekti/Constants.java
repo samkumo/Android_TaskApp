@@ -2,6 +2,9 @@ package com.samkumo.etp4700_projekti;
 
 /**
  * Created by Samuli on 24.3.2017.
+ *
+ * Using Constants class as a easier way to access global constants
+ * You could use Resources files instead, but I find this method less obfuscated and more conventient.
  */
 
 public class Constants {
